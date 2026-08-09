@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+//In mysql its by default null and here to make null or optional we need to use ?
+
+model Task {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  category    String?
+  movieId     String?
+  status      String   @default("pending")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
