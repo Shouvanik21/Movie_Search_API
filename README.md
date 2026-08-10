@@ -105,7 +105,7 @@ can be found using:
 The project intentionally keeps a simple structure without an unnecessary `src` folder.
 
 ```text
-movie-search-api/
+Movie_Search_API/
 │
 ├── controllers/
 │   └── controller.js
@@ -353,6 +353,25 @@ You can also update multiple fields:
 ```http
 DELETE /api/auth/deletetaskbyid/1
 ```
+
+## 📚 What I Learned
+
+Through this project, I practiced:
+
+* Building RESTful APIs with Express.js
+* Creating API routes and controllers
+* Working with request parameters and query parameters
+* Handling JSON request bodies
+* Integrating an external REST API
+* Working with PostgreSQL
+* Understanding relational databases
+* Using Prisma ORM
+* Performing CRUD operations with Prisma
+* Filtering database records
+* Mapping Prisma operations to SQL queries
+* Handling API errors and HTTP status codes
+* Managing environment variables
+* Testing REST APIs with Thunder Client
 
 ## 🔐 Environment Variables
 
